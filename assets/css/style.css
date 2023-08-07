@@ -29,11 +29,24 @@ body {
 .bundles-section {
 	border: 1px solid #ccc;
 	border-radius: 4px;
-	padding: 40px;
-	height: 100%;
+}
+
+.pair{
+	display: flex;
+	justify-content: flex-start;
+	padding: 20px;
 	cursor: pointer;
 }
 
+
+.pair-group{
+	width: 100%;
+}
+
+.pair-group .pairSub , .pair-group .pairSubNext{
+	display: flex;
+	justify-content: space-between;
+}
 
 .bundles-section .pairSub :first-child {
 	font-weight: 400;
@@ -41,11 +54,7 @@ body {
 	color: #000;
 }
 
-.bundles-section .pair1 span:nth-child(2) {
-	float: right;
-}
-
-.bundles-section .pair1 .most {
+.bundles-section .pairSub .most {
 	font-size: 12.65px;
 	font-weight: 600;
 	color: #007F61;
@@ -60,16 +69,11 @@ body {
 }
 
 
-.dropSelection {
-	display: table;
-	width: 100%;
-	clear: both;
-}
 
 
 .dropSelection .dropList {
-	float: left;
-	width: 100%;
+	display: flex;
+	align-items: center;
 }
 
 .dropSelection .dropList label {
@@ -110,11 +114,10 @@ body {
 	cursor: pointer;
 }
 
-
-.freeInfo span:last-child {
-	float: right;
+.freeInfo{
+	display: flex;
+	justify-content: space-between;
 }
-
 
 .btns {
 	height: 48px;
@@ -134,40 +137,66 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
 .bundles-section .radio {
-	float: left;
 	width: 15px;
 	height: 15px;
 	border: 2px solid #ccc;
-	margin: 10px 30px;
+	margin: 10px 30px 0 0;
 	border-radius: 50%;
+	display: inline-block;
 }
 
 .bundles-section .radio.active {
-	float: left;
+	display: inline-block;
 	width: 15px;
 	height: 15px;
 	background-color: #007F61;
 	outline: 2px solid #007F61;
 	border: 2px solid #fff;
-	margin: 10px 30px;
+	margin: 10px 20px 0 0;
 	border-radius: 50%;
 }
 
 
-.bundles-section .dropSelection>.showInfo {
+.bundles-section .dropSelection{
+	padding: 0 40px 40px;
+	cursor: pointer;
 	display: none;
+
 }
 
 
-.bundles-section.active .dropSelection>.showInfo {
-	display: table;
+
+.bundles-section.active .dropSelection {
+	display: block;
+
 }
 
 .bundles-section.active {
 	background-color: #F4FBF9;
 	border: 1px solid #007F61;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
