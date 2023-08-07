@@ -7,12 +7,10 @@ a, a:hover, a:focus, a:active, a:link, a:visited{
     display: inline-block;
 }
 
-/* .primary-01{
-    
-} */
 
 .container{
-    width: 768px;
+    min-width: 340px;
+    max-width: 768px;
     margin: 50px auto;
 }
 

@@ -2,12 +2,14 @@ let cl = console.log;
 
 const bundlesSection = [...document.querySelectorAll('.bundles-section')];
 
+const pair = [... document.querySelectorAll('.pair')];
+// const radiobtn = [...document.querySelectorAll('.radio')];
+
 
 
 const onhandler = (eve) =>{
-    cl(eve.target)
-    bundlesSection.forEach((eve) => {
-        eve.classList.remove('active')
+    bundlesSection.forEach((eves) => {
+        eves.classList.remove('active')
     })
     eve.target.classList.add('active');
 }
@@ -15,10 +17,11 @@ const onhandler = (eve) =>{
 
 
 
-
 bundlesSection.forEach((ele)=>{
     ele.addEventListener('click', onhandler)
 })
+
+
 
 
 
