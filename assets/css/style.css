@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.bundles-heading hr{
+    position: relative;
+    top: -30px;
+    z-index: -1;
+}
+.bundles-heading h2{
+    text-transform: capitalize;
+    padding: 20px;
+    font-size: 18.08px;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    color: #007F61;
+    z-index: 1;
+}
+
+.bundles-section{
+    border: 2px solid #007F61;
+    background-color: #F4FBF9;
+    border-radius: 4px;
+    padding: 40px;
+    /* height: 260px; */
+    height: auto;
+}
+
+.bundles-section input{
+    margin: 10px 30px;
+}
+
+.bundles-section input{
+  float: left;
+}
+.bundles-section .pairSub :first-child{
+    font-weight: 400;
+    font-size: 14.46px;
+    color: #000;
+}
+
+.bundles-section .pair1 span:nth-child(2){
+    float: right;
+}
+
+.bundles-section .pair1 .most{
+    font-size: 12.65px;
+    font-weight: 600;
+    color: #007F61;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.bundles-section .pairSubNext span{
+    font-size: 14.46px;
+    font-weight: 500;
+    color: #000;
+}
+
+
+
+.dropSelection{
+    display: table;
+    width: 100%;
+    clear: both;
+}
+
+
+.dropSelection .dropList{
+    float: left;
+    width: 100%;
+}
+
+
+.bundles-section .dropSelection > .showInfo{
+    display: none;
+}
+
+
+.bundles-section.active .dropSelection > .showInfo{
+    display: block;
+}
+
+.dropSelection .sizeSection{
+    display: inline-block;
+}
+
+.sizeSection p{
+    font-size: 9.94px;
+    line-height: 12.03px;
+    font-weight: 400;
+    color: #000;
+}
+
+.sizeSection select{
+    width: 66px;
+    padding: 4px;
+}
+
+.sizeSection select option{
+    font-size: 10.85px;
+    line-height: 13.13px;
+    color: #000;
+}
+
+
+.freeInfo span:first-child{
+    line-height: 16.94px;
+    color: #007F61;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.freeInfo span:last-child{
+    float: right;
+}
+
+
+.btns{
+    height: 48px;
+    background-color: #007F61;
+    color: #fff;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
